@@ -1,5 +1,5 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -13,10 +13,15 @@ const Hero = () => {
             <p className="text-xl md:text-2xl mb-8 max-w-2xl">
               Discover premium properties in Bangalore with GLOBAL ENTERPRISES - Your trusted partner in real estate since 1970
             </p>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg flex items-center text-lg font-semibold transition duration-300">
-              Explore Properties
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
+            <Link
+                key={"Resale"}
+                to={"/property-resale"}
+              >
+              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg flex items-center text-lg font-semibold transition duration-300">
+                Explore Properties
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </button>
+              </Link>
           </div>
         </div>
       </div>

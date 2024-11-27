@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
@@ -10,8 +9,8 @@ const Footer = () => {
   };
 
   const defaultCenter = {
-    lat: 12.8898,
-    lng: 77.6366
+    lat: 12.886150,
+    lng: 77.587372
   };
 
   return (
@@ -39,7 +38,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2">
               <li className="flex items-center">
-                <MapPin className="h-5 w-5 mr-2 text-red-600" />
+                <MapPin className="h-8 w-8 mr-2 text-red-600" />
                 <a 
                   href="https://maps.app.goo.gl/MarKkvFjX26iZycj6" 
                   target="_blank" 
@@ -64,7 +63,7 @@ const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Location</h4>
-            <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+            <LoadScript googleMapsApiKey="AIzaSyAR6oZ1l7uhxQp6cWmSa_kyRuGCmtujjiM">
               <GoogleMap
                 mapContainerStyle={mapStyles}
                 zoom={15}

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MapPin, Bed, Bath, Square } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import Modal from './Modal';
 import LeadForm from './LeadForm';
 
@@ -34,9 +34,9 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       >
         <div className="relative h-48">
           <img src={property.image} alt={property.title} className="w-full h-full object-cover" />
-          <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full">
+          {/* <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full">
             {property.price}
-          </div>
+          </div> */}
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold text-gray-900 mb-2">{property.title}</h3>
@@ -45,18 +45,18 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
             <span>{property.location}</span>
           </div>
           <div className="flex justify-between text-gray-600">
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <Bed className="h-5 w-5 mr-1" />
               <span>{property.beds} Beds</span>
             </div>
             <div className="flex items-center">
               <Bath className="h-5 w-5 mr-1" />
               <span>{property.baths} Baths</span>
-            </div>
-            <div className="flex items-center">
+            </div> */}
+            {/* <div className="flex items-center">
               <Square className="h-5 w-5 mr-1" />
               <span>{property.area}</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

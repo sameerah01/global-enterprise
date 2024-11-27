@@ -1,24 +1,54 @@
-import React from 'react';
-import { Award, Star } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 
 const awards = [
   {
     id: 1,
-    title: 'Best Real Estate Agency 2023',
-    organization: 'Bangalore Real Estate Awards',
-    icon: Award,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_1.jpg"
   },
   {
     id: 2,
-    title: 'Excellence in Customer Service',
-    organization: 'Property Excellence Awards',
-    icon: Star,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_2.jpg"
   },
   {
     id: 3,
-    title: 'Top Developer Partner 2023',
-    organization: 'Prestige Group',
-    icon: Award,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_3.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_4.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_5.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_6.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_7.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_8.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_9.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_10.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_11.jpg"
+  },
+  {
+    id: 3,
+    "image": "src/assets/awards/New Doc 11-23-2024 12.37_12.jpg"
   },
 ];
 
@@ -30,18 +60,28 @@ const Awards = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Awards & Recognition</h2>
           <p className="text-lg text-gray-600">Excellence recognized in the industry</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{ delay: 600 }}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          }}
+        >
           {awards.map((award) => (
-            <div
-              key={award.id}
-              className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300"
-            >
-              <award.icon className="h-12 w-12 text-red-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{award.title}</h3>
-              <p className="text-gray-600">{award.organization}</p>
-            </div>
+            <SwiperSlide key={award.id}>
+              <div className="bg-white p-4 rounded-lg shadow-md">
+                <img
+                  src={award.image}
+                  className="w-full h-48 object-contain"
+                />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );

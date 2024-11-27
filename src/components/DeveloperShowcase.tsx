@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -43,7 +42,7 @@ const DeveloperShowcase = () => {
           modules={[Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 1000 }}
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },

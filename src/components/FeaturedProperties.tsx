@@ -1,42 +1,5 @@
-import React from 'react';
 import PropertyCard from './PropertyCard';
-import { Building2, MapPin, Bed, Bath, Square } from 'lucide-react';
-
-const properties = [
-  {
-    id: 1,
-    title: 'Luxury Villa in Whitefield',
-    location: 'Whitefield, Bangalore',
-    price: '₹2.5 Cr',
-    image:
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    beds: 4,
-    baths: 4,
-    area: '3500 sq ft',
-  },
-  {
-    id: 2,
-    title: 'Modern Apartment in JP Nagar',
-    location: 'JP Nagar, Bangalore',
-    price: '₹1.2 Cr',
-    image:
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    beds: 3,
-    baths: 3,
-    area: '1800 sq ft',
-  },
-  {
-    id: 3,
-    title: 'Premium Villa in Electronic City',
-    location: 'Electronic City, Bangalore',
-    price: '₹3.1 Cr',
-    image:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    beds: 5,
-    baths: 5,
-    area: '4200 sq ft',
-  },
-];
+import {properties} from '../data/properties.json';
 
 const FeaturedProperties = () => {
   return (
@@ -44,7 +7,7 @@ const FeaturedProperties = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Featured Properties
+            Featured Propemrties
           </h2>
           <p className="text-lg text-gray-600">
             Discover our hand-picked premium properties
