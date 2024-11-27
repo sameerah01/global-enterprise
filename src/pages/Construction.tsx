@@ -1,6 +1,6 @@
 import React from 'react';
 import LeadForm from '../components/LeadForm';
-import { Tool, CheckCircle } from 'lucide-react';
+import { CheckCircle } from '../components/icons';
 
 const services = [
   {

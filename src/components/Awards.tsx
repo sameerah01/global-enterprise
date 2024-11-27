@@ -4,51 +4,51 @@ import { Autoplay } from 'swiper/modules';
 const awards = [
   {
     id: 1,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_1.jpg"
+    "image": "/awards/New Doc 11-23-2024 13.32_11.jpg"
   },
   {
     id: 2,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_2.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_2.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_3.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_3.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_4.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_4.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_5.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_5.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_6.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_6.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_7.jpg"
+    "image": "/awards/New Doc 11-23-2024 13.32_8.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_8.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_8.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_9.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_9.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_10.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_10.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_11.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_11.jpg"
   },
   {
     id: 3,
-    "image": "src/assets/awards/New Doc 11-23-2024 12.37_12.jpg"
+    "image": "/awards/New Doc 11-23-2024 12.37_12.jpg"
   },
 ];
 

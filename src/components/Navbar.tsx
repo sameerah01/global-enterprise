@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Home, Building2, Key, MapPin, Construction, Paintbrush2, Phone } from 'lucide-react';
+import { Menu, X, Home, Building2, Key, MapPin, Construction, Paintbrush2, Phone } from './icons';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

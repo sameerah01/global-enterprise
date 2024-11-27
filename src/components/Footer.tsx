@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, MapPin, Phone, Mail } from './icons';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Footer = () => {

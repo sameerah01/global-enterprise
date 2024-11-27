@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MapPin } from 'lucide-react';
+import { MapPin } from './icons';
 import Modal from './Modal';
 import LeadForm from './LeadForm';
 

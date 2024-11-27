@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { MapPin, Bed, Bath, Square, Phone, Mail, Download } from 'lucide-react';
+import { MapPin, Bed, Bath, Square, Phone, Mail, Download } from '../components/icons';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import LeadForm from '../components/LeadForm';
 

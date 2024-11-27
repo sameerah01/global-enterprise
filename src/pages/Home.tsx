@@ -15,8 +15,8 @@ const Home = () => {
       <FeaturedProperties />
       <DeveloperShowcase />
       <LeadForm />
-      <TeamShowcase />
       <Awards />
+      <TeamShowcase />
     </div>
   );
 };

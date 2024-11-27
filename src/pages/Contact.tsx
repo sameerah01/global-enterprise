@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from '../components/icons';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Contact = () => {

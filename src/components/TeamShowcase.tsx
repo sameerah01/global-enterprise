@@ -1,4 +1,4 @@
-import { Phone, Mail, Linkedin } from 'lucide-react';
+import { Phone, Mail, Linkedin } from './icons';
 
 const team = [
   {

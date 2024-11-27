@@ -1,6 +1,6 @@
 import React from 'react';
 import LeadForm from '../components/LeadForm';
-import { Paintbrush2, CheckCircle } from 'lucide-react';
+import { Paintbrush2, CheckCircle } from '../components/icons';
 
 const services = [
   {

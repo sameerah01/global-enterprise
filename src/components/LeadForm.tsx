@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send } from 'lucide-react';
+import { Send } from './icons';
 
 const LeadForm = ({ onSubmit }) => {
   const [formData, setFormData] = useState({

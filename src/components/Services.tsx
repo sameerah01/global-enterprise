@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import * as Icons from 'lucide-react';
+import * as Icons from './icons';
 import servicesData from '../data/services.json';
 
 const Services = () => {
