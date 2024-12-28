@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 
+interface Enquiries {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  requirement: string;
+  created_at: string;
+}
+
 const EnquiriesTable = () => {
-  const [enquiries, setEnquiries] = useState([]);
+  const [enquiries, setEnquiries] = useState<Enquiries[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 

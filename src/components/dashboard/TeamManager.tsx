@@ -157,7 +157,7 @@ const TeamManager = () => {
     setError(null);
   };
 
-  const handleImageSelect = (files: FileList) => {
+  const handleImageSelect = async (files: FileList): Promise<void> => {
     if (files.length > 0) {
       setFormData(prev => ({
         ...prev,
@@ -166,7 +166,7 @@ const TeamManager = () => {
     }
   };
 
-  const handleImageDelete = () => {
+  const handleImageDelete = async () : Promise<void> => {
     setFormData(prev => ({
       ...prev,
       tempImage: null

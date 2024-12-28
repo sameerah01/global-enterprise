@@ -6,7 +6,7 @@ import { supabase } from '../../lib/supabase';
 
 interface ImageViewerProps {
   images: string[];
-  type: 'resale' | 'primary_sale' | 'rental';
+  type: 'resale' | 'primary_sale' | 'rental' | 'plots' | 'team';
   propertyId: string;
   onImagesUpdate: (updatedImages: string[]) => void;
 }

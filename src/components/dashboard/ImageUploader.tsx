@@ -4,7 +4,7 @@ import { X } from '../icons';
 interface ImageUploaderProps {
   images: string[];
   onUpload: (files: FileList) => Promise<void>;
-  onDelete: (url: string) => Promise<void>;
+  onDelete: (url: Number) => Promise<void>;
   multiple?: boolean;
 }
 

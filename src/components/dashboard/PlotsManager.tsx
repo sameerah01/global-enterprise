@@ -110,9 +110,11 @@ const PlotsManager = () => {
       const plot = plots.find(p => p.id === id);
       
       // Delete images from storage
-      await Promise.all(
-        plot.images.map(url => deleteImage('plots', url))
-      );
+      if (plot) {
+        await Promise.all(
+          plot.images.map(url => deleteImage('plots', url))
+        );
+      }
 
       const { error } = await supabase
         .from('plots')
@@ -149,14 +151,14 @@ const PlotsManager = () => {
     fetchPlots();
   };
 
-  const handleImageSelect = (files: FileList) => {
+  const handleImageSelect = async (files: FileList): Promise<void> => {
     setFormData(prev => ({
       ...prev,
       tempImages: [...prev.tempImages, ...Array.from(files)]
     }));
   };
 
-  const handleImageDelete = (index: number) => {
+  const handleImageDelete = async (index: Number): Promise<void> => {
     setFormData(prev => ({
       ...prev,
       tempImages: prev.tempImages.filter((_, i) => i !== index)

@@ -70,7 +70,7 @@ const ServicesManager: React.FC<ServicesManagerProps> = ({ type }) => {
     }
   };
 
-  const handleImageSelect = (files: FileList) => {
+  const handleImageSelect = async (files: FileList) : Promise<void> => {
     setFormData(prev => ({
       ...prev,
       tempImages: [...prev.tempImages, ...Array.from(files)]
@@ -135,9 +135,11 @@ const ServicesManager: React.FC<ServicesManagerProps> = ({ type }) => {
         ? service.logo
         : service.images;
 
+    if (imagesToDelete){
       await Promise.all(
         [imagesToDelete].map(url => deleteImage(type, url))
       );
+    }
 
       const { error } = await supabase
         .from(tableName)
@@ -166,7 +168,7 @@ const ServicesManager: React.FC<ServicesManagerProps> = ({ type }) => {
     return <div>Loading...</div>;
   }
 
-  const handlePreviewImageDelete = (index: number) => {
+  const handlePreviewImageDelete = async (index: Number) : Promise<void> => {
     setFormData(prev => ({
       ...prev,
       tempImages: prev.tempImages.filter((_, i) => i !== index)

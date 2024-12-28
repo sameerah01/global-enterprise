@@ -46,7 +46,7 @@ const DashboardSidebar = () => {
         <ul className="space-y-2 p-4">
           {menuItems.map((item) => {
             const Icon = item.icon;
-            const isActive = pathname.includes(item.path);
+            const isActive = pathname?.includes(item.path);
             
             return (
               <li key={item.path}>

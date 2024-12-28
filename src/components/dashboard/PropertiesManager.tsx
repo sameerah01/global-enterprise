@@ -12,7 +12,7 @@ interface Property {
   project: string;
   location: string;
   size: string;
-  price: number;
+  price: string;
   images: string[];
   created_at: string;
 }
@@ -42,7 +42,7 @@ const PropertiesManager: React.FC<PropertiesManagerProps> = ({ type }) => {
     project: '',
     location: '',
     size: '',
-    price: 0,
+    price: '',
     tempImages: []
   });
 
@@ -171,20 +171,20 @@ const PropertiesManager: React.FC<PropertiesManagerProps> = ({ type }) => {
       project: '',
       location: '',
       size: '',
-      price: 0,
+      price: '',
       tempImages: []
     });
     setError(null);
   };
 
-  const handleImageSelect = (files: FileList) => {
+  const handleImageSelect = async (files: FileList): Promise<void> => {
     setFormData(prev => ({
       ...prev,
       tempImages: [...prev.tempImages, ...Array.from(files)]
     }));
   };
 
-  const handleImageDelete = (index: number) => {
+  const handleImageDelete = async (index: Number): Promise<void> => {
     setFormData(prev => ({
       ...prev,
       tempImages: prev.tempImages.filter((_, i) => i !== index)

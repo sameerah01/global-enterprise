@@ -1,10 +1,11 @@
-import { useParams } from 'react-router-dom';
+
 import { useProperty } from '../hooks/useProperty';
 import { MapPin, Download } from '../components/icons';
 import LeadForm from '../components/LeadForm';
+import { useParams } from 'next/navigation';
 
 const PropertyDetails = () => {
-  const { id, type = 'resale' } = useParams();
+  const { id, type = 'resale' } = useParams()
   const { property, loading, error } = useProperty(type as any, id);
 
   if (loading) {
