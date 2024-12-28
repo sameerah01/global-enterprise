@@ -1,5 +1,5 @@
 import { ArrowRight } from './icons';
-import { Link } from 'react-router-dom';
+import  Link  from 'next/link';
 
 const Hero = () => {
   return (
@@ -11,11 +11,11 @@ const Hero = () => {
               Your Dream Property Awaits
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-              Discover premium properties in Bangalore with GLOBAL ENTERPRISES - Your trusted partner in real estate since 1970
+              Discover premium properties in Bangalore with GLOBAL ENTERPRISES - Your trusted partner in real estate
             </p>
             <Link
                 key={"Resale"}
-                to={"/property-resale"}
+                href="/property-resale"
               >
               <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg flex items-center text-lg font-semibold transition duration-300">
                 Explore Properties

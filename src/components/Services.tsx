@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import  Link  from 'next/link';
 import * as Icons from './icons';
 import servicesData from '../data/services.json';
 
@@ -16,7 +16,7 @@ const Services = () => {
             return (
               <Link
                 key={service.title}
-                to={service.path}
+                href={service.path}
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"
               >
                 <Icon className="h-12 w-12 text-red-600 mb-4" />
