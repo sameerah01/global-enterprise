@@ -36,12 +36,17 @@ const RentalProperties = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {properties.map((property) => (
               <PropertyCard 
-                key={property.id} 
-                property={{
-                  ...property,
-                  image: property.images?.[0] || '/placeholder.jpg'
-                }} 
-              />
+              key={property.id} 
+              property={{
+                id: property.id,
+                title: property.builder_name,
+                location: property.location,
+                price: property.price.toString(),
+                image: property.images?.[0] || '/placeholder.jpg',
+                area: property.size,
+                project: property.project
+              }} 
+            />
             ))}
           </div>
         </div>

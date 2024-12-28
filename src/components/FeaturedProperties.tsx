@@ -35,8 +35,13 @@ const FeaturedProperties = () => {
               <PropertyCard 
                 key={property.id} 
                 property={{
-                  ...property,
-                  image: property.images?.[0] || '/placeholder.jpg'
+                  id: property.id,
+                  title: property.builder_name,
+                  location: property.location,
+                  price: property.price.toString(),
+                  image: property.images?.[0] || '/placeholder.jpg',
+                  area: property.size,
+                  project: property.project
                 }} 
               />
             ))}

@@ -21,11 +21,12 @@ export async function deleteImage(bucket: string, url: string): Promise<void> {
   const path = url.split(bucket + '/').pop();
   
   try{
-    await supabase.storage
-    .from(bucket)
-    .remove([path]);
-    console.log('done');
-    
+    if(path){
+      await supabase.storage
+      .from(bucket)
+      .remove([path]);
+      console.log('done');
+    }
   }
   catch (error) {
     throw error;

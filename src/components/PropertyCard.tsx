@@ -9,13 +9,11 @@ import Image from './Image';
 
 interface PropertyCardProps {
   property: {
-    id: number;
+    id: string;
     title: string;
     location: string;
     price: string;
     image: string;
-    beds: number;
-    baths: number;
     area: string;
     project: string;
   };
@@ -56,7 +54,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       </div>
 
       <Modal isOpen={showLeadForm} onClose={() => setShowLeadForm(false)}>
-        <LeadForm onSubmit={handleLeadSubmit} propertyTitle={property.title} />
+        <LeadForm onSubmit={handleLeadSubmit} />
       </Modal>
     </>
   );

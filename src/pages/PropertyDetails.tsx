@@ -5,7 +5,9 @@ import LeadForm from '../components/LeadForm';
 import { useParams } from 'next/navigation';
 
 const PropertyDetails = () => {
-  const { id, type = 'resale' } = useParams()
+  const params = useParams();
+  const id = params?.id as string;
+  const type = (params?.type as string) || 'resale';
   const { property, loading, error } = useProperty(type as any, id);
 
   if (loading) {

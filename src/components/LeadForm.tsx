@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { Send } from './icons';
 import { supabase } from '../lib/supabase';
 
-const LeadForm = ({ onSubmit }) => {
+interface LeadFormProps {
+  onSubmit?: () => void;
+}
+
+const LeadForm: React.FC<LeadFormProps> = ({ onSubmit }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
