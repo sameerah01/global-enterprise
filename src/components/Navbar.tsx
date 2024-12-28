@@ -25,8 +25,7 @@ const Navbar = () => {
     { name: 'Gated Plots', path: '/gated-plots', icon: MapPin },
     { name: 'Construction', path: '/construction', icon: Construction },
     { name: 'Interior Design', path: '/interior-design', icon: Paintbrush2 },
-    { name: 'Contact', path: '/contact', icon: Phone },
-    { name: 'Login', path: '/login', icon: Phone },
+    { name: 'Contact', path: '/contact', icon: Phone }
   ];
 
   return (
