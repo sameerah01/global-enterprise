@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
   const phoneNumber = '919844222500'; // Replace with your WhatsApp number
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
-  if (pathname === '/login' || pathname.startsWith('/dashboard')) {
+  if (pathname === '/login' || pathname?.startsWith('/dashboard')) {
     return null;
   }
 
