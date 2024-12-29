@@ -17,9 +17,10 @@ interface PropertyCardProps {
     area: string;
     project: string;
   };
+  type: string
 }
 
-const PropertyCard = ({ property }: PropertyCardProps) => {
+const PropertyCard = ({ property, type }: PropertyCardProps) => {
   const [showLeadForm, setShowLeadForm] = useState(false);
   const router = useRouter();
 
@@ -34,7 +35,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
     if(!formSubmitted) {
       setShowLeadForm(true);
     } else {
-      router.push(`/property/${property.id}`);
+      router.push(`/property/${property.id}?type=${type}`);
     }
   }
 

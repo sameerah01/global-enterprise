@@ -48,6 +48,7 @@ const NewProperties = () => {
                   area: property.size,
                   project: property.project
                 }} 
+                type="primary_sale"
               />
             ))}
           </div>

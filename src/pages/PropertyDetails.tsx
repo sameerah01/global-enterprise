@@ -1,13 +1,15 @@
 
 import { useProperty } from '../hooks/useProperty';
+import { useSearchParams } from 'next/navigation'
 import { MapPin, Download } from '../components/icons';
 import LeadForm from '../components/LeadForm';
 import { useParams } from 'next/navigation';
 
 const PropertyDetails = () => {
-  const params = useParams();
+  const searchParams = useSearchParams()
+  const params = useParams()
+  const type = searchParams?.get('type')
   const id = params?.id as string;
-  const type = (params?.type as string) || 'resale';
   const { property, loading, error } = useProperty(type as any, id);
 
   if (loading) {

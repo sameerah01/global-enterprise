@@ -46,6 +46,7 @@ const PropertyResale = () => {
                 area: property.size,
                 project: property.project
               }} 
+              type="resale"
             />
             ))}
           </div>

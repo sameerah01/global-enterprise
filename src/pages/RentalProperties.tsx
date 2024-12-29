@@ -46,6 +46,7 @@ const RentalProperties = () => {
                 area: property.size,
                 project: property.project
               }} 
+              type="rental"
             />
             ))}
           </div>
