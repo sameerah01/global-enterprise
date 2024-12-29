@@ -1,17 +1,6 @@
-import React from 'react';
 import { MapPin, Phone, Mail, Clock } from '../components/icons';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Contact = () => {
-  const mapStyles = {
-    height: '400px',
-    width: '100%',
-  };
-
-  const defaultCenter = {
-    lat: 12.9716,
-    lng: 77.5946,
-  };
 
   return (
     <div>
@@ -39,7 +28,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-6 w-6 text-red-600 mr-3" />
-                  <p className="text-gray-600">08040998072</p>
+                  <p className="text-gray-600">9844222500</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 text-red-600 mr-3" />
@@ -50,18 +39,6 @@ const Contact = () => {
                   <p className="text-gray-600">Mon - Sat: 9:00 AM - 6:00 PM</p>
                 </div>
               </div>
-            </div>
-            
-            <div>
-              <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-                <GoogleMap
-                  mapContainerStyle={mapStyles}
-                  zoom={13}
-                  center={defaultCenter}
-                >
-                  <Marker position={defaultCenter} />
-                </GoogleMap>
-              </LoadScript>
             </div>
           </div>
         </div>

@@ -48,7 +48,6 @@ const GatedPlots = () => {
                     <span>{plot.location}</span>
                   </div>
                   <div className="flex items-center text-gray-600">
-                    <Square className="h-5 w-5 mr-2" />
                     <span>{formatPrice(plot.price_per_sqft)}/sq.ft</span>
                   </div>
                 </div>

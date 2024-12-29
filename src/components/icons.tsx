@@ -23,11 +23,26 @@ const SendIcon = lazy(() => import('lucide-react/dist/esm/icons/send'));
 const SquareIcon = lazy(() => import('lucide-react/dist/esm/icons/square'));
 const TwitterIcon = lazy(() => import('lucide-react/dist/esm/icons/twitter'));
 const XIcon = lazy(() => import('lucide-react/dist/esm/icons/x'));
+const ScaleIcon = lazy(() => import('lucide-react/dist/esm/icons/scale'));
+const SchoolIcon = lazy(() => import('lucide-react/dist/esm/icons/school'));
 
 // Create wrapper components with Suspense
 export const ArrowRight = (props: any) => (
   <Suspense fallback={<div className="w-6 h-6" />}>
     <ArrowRightIcon {...props} />
+  </Suspense>
+);
+
+
+export const Scale = (props: any) => (
+  <Suspense fallback={<div className="w-6 h-6" />}>
+    <ScaleIcon {...props} />
+  </Suspense>
+);
+
+export const School = (props: any) => (
+  <Suspense fallback={<div className="w-6 h-6" />}>
+    <SchoolIcon {...props} />
   </Suspense>
 );
 

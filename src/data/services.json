@@ -35,6 +35,12 @@
       "description": "Transform your space with our interior design services",
       "icon": "Paintbrush2",
       "path": "/interior-design"
+    },
+    {
+      "title": "Legal Services",
+      "description": "Professional legal assistance for all real estate matters",
+      "icon": "Scale",
+      "path": "/legal-services"
     }
   ]
 }

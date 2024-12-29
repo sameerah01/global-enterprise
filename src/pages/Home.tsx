@@ -11,10 +11,10 @@ const Home = () => {
     <div>
       <Hero />
       <Services />
+      <Awards />
       <FeaturedProperties />
       <DeveloperShowcase />
       <LeadForm />
-      <Awards />
       <TeamShowcase />
     </div>
   );

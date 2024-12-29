@@ -25,14 +25,24 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
 
   const handleLeadSubmit = () => {
     setShowLeadForm(false);
+    sessionStorage.setItem('formSubmitted', 'true');
     router.push(`/property/${property.id}`);
   };
+
+  const handlePropertyClick = () => {
+    const formSubmitted = sessionStorage.getItem('formSubmitted');
+    if(!formSubmitted) {
+      setShowLeadForm(true);
+    } else {
+      router.push(`/property/${property.id}`);
+    }
+  }
 
   return (
     <>
       <div 
         className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition duration-300"
-        onClick={() => setShowLeadForm(true)}
+        onClick={handlePropertyClick}
       >
         <div className="relative h-48">
           <Image 
