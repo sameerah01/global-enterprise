@@ -1,8 +1,9 @@
-"use client"
+'use client';
 
 import { Inter } from 'next/font/google'
 import Navbar from '@/src/components/Navbar'
 import Footer from '@/src/components/Footer'
+import WhatsAppButton from '@/src/components/WhatsAppButton';
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,6 +22,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
       </body>
     </html>
